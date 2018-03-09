@@ -48,8 +48,8 @@ G- Other high school with at least four sets.
 ## You will certainly put that on your terminal at the end of the meetup
 
 ```R
-curl --data '{"ntree":500, "na_wtf":"na.roughfix"}' "http://localhost/meetup"
-curl --data '{"ntree":500, "na_wtf":"na.omit"}' "http://localhost/meetup"
+curl --data '{"ntree":500, "na_default":"na.roughfix"}' "http://localhost/meetup"
+curl --data '{"ntree":500, "na_default":"na.omit"}' "http://localhost/meetup"
 ```
 
 ## Docker, only for motivated people 
