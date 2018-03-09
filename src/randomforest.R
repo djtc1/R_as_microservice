@@ -9,7 +9,7 @@
 
 
 #* @post /meetup 
-meetup <- function(ntree, na_wtf) {
+meetup <- function(ntree, na_default) {
   
   #########################################################
   #
@@ -41,7 +41,7 @@ meetup <- function(ntree, na_wtf) {
   # Run the random forest ;
   ( model <- randomForest(private_or_public ~ ., 
                           data = train, ntree = ntree,
-                          na.action = na_wtf))
+                          na.action = na_default))
   
   
   #########################################################
