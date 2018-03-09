@@ -23,7 +23,6 @@ meetup <- function(ntree, na_wtf) {
   
   # Split the data {training and testing datasets}
   train <- lycee %>% sample_frac(0.8)
-  test <- anti_join(lycee, train)
   
   
   # Set the seed for reproduction the experiment
@@ -37,6 +36,7 @@ meetup <- function(ntree, na_wtf) {
   
   
   # Predict the label from the model
+  test <- anti_join(lycee, train)
   (test$predicted <- predict(model, test)) 
   
   
